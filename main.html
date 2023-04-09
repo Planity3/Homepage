@@ -1,7 +1,17 @@
 <style>
+    .container {
+        width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
     .welcomeMat {
-        font: 14px;
-        font-family: "Comic Sans MS", "Lato";
+        font-size: 14px;
         float: none;
         width: 730px;
         height: 155px;
@@ -9,14 +19,87 @@
         margin-right: auto;
         color: rgb(255, 183, 0);
         background: rgb(36, 13, 82);
+        background-image: url(/assets/images/back3.png);
+        border-radius: 5px;
+        border-style: dotted;
+        border-color: magenta;
+        border-width: 2px;
+        padding: 10px;
+        display: block;
+    }
+    .welcomeMat h1 {
+        font-style: italic;
+        margin: 0px;
+        margin-top: -2px;
+        display: inline-block;
+    }
+    .welcomeMat p {
+        margin-left: 2px;
+        display: block;
+        margin-top: 10px;
+        width: 73%;
+    }
+    .buttonRow {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: -9px;
+        display: block;
+        text-align: center;
+    }
+    .stampBlock {
+        display: inline;
+        margin-left: 3.5px;
+        position: absolute;
+        width: 428px;
+    }
+    .welcomeImage img {
+        position: absolute;
+        float: right;
+        z-index: 1;
+        margin-left: 650px;
+        margin-top: -10px;
+        width: 170px;
+    }
+    body {
+        color: rgb(255, 183, 0);
+        font-family: "Comic Sans MS", "Lato";
+        margin: 0px;
+        position: relative;
+        height: auto;
+        width: 100%;
+        scrollbar-width: none;
     }
 </style>
 
 
 <body style="background-image: none; background-color: rgba(0, 0, 0, 0);">
     <div class="container" style="margin-left: 115px; margin-top: -10px; width: 1000px;">
+        <div class="welcomeImage">
+            <img src="/assets/images/145.gif" alt="">
+        </div>
         <div class="welcomeMat">
             <h1>Welcome Traveller</h1>
+            <p>Hello there! My name is Glowstick "Oddity" Greeble, and I created this webpage because I was tired of the internet's commercialization. This is my personal space to share my stuff, and while I'm not a pro at html/css, I'll do my best to make it enjoyable for you. So please explore with caution, and I hope you have a pleasant stay!</p>
+        </div>
+        <div class="buttonRow">
+            <img src="/assets/images/23.gif">
+            <img src="/assets/images/ilikecomputer.png">
+            <img src="/assets/images/site_best_viewed_with_monitor.gif">
+            <a href="https://yesterweb.org/no-to-web3/"><img src="/assets/images/roly-saynotoweb3.gif">
+            </a>
+            <img src="/assets/images/8834_mitoki.png">
+
+        </div>
+        <div class="buttonRow">
+            <img src="/assets/images/bar013.gif">
+        </div>
+        <div style="margin-top: 15px; margin-left: 125px; margin-bottom: -5px;">
+            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Plinka&dob=1681045097&gender=f&element=Earth&pet=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F315522095184347138%2F1094605826666287234%2Fmf2oclqamjo91.gif&map=https%3A%2F%2Fweb.archive.org%2Fweb%2F20091028011835%2Fhttp%3A%2F%2Fwww.geocities.com%2Fgypsykatcha%2Fsparklebackground.gif&background=1995.png&tablecolor=black&textcolor=black" frameborder="0"></iframe>        
+            <div class="stampBlock">
+
+            </div>
         </div>
     </div>
 </body>

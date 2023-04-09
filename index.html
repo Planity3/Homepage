@@ -1,4 +1,7 @@
 <style>
+    #target {
+        height: 1798px;
+    }
     .leftContainer {
         width: 214px;
         display: inline;
@@ -16,6 +19,13 @@
     .container a {
         color: darkorange;
         text-decoration: none;
+    }
+    .buttons {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 91px;
+        display: block;
     }
     .sidebar {
         float: left;
@@ -108,6 +118,11 @@
         background-color: black;
         background-image: url("/assets/images/back2.gif");
     }
+    footer p {
+        color: darkorange;
+        font-size: 12px;
+        text-align: center;
+    }
 </style>
 
 
@@ -126,10 +141,10 @@
         <div class="navBar">
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="main.html" target="mainbox">Home</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="about.html" target="mainbox">About</a>
                 </li>
                 <li>
                     <a href="">Gallery</a>
@@ -152,14 +167,17 @@
                         LastFM</a>
                 </div>
             </div> 
-            <img src="/assets/images/10.gif" style="border: dotted; border-width: 2px; width: 150px; height: 20px; margin-top: 10px; border-radius: 5px;">  
-            <img src="/assets/images/2003.gif" style="border: dotted; border-width: 2px; width: 150px; height: 20px; margin-top: 10px; border-radius: 5px;">  
+            <img src="/assets/images/10.gif" style="border: dotted; border-width: 2px; width: 100px; height: 20px; margin-top: 10px; border-radius: 5px;">  
+            <img src="/assets/images/2003.gif" style="border: dotted; border-width: 2px; width: 100px; height: 20px; margin-top: 10px; border-radius: 5px;">  
 
         </div>
         <div class="rightContainer"></div>
         <iframe id="target" name="mainbox" src="main.html" onload="updateURL()" style="overflow: hidden; width: 100%; border: none;"></iframe>
     </div>
     <footer>
-
+        <div class="buttons" style="margin-top: 10px;">
+            <p>Proud member of the</p>
+            <img src="/assets/images/worldwideweb_badge.gif">
+        </div>
     </footer>
 </body>
